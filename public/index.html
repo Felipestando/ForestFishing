@@ -9,7 +9,43 @@
 .fundo{
       	background-color: green;
       }
+body {font-family: Arial, Helvetica, sans-serif;}
 
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+ .container {
+        background: black;
+                display: flex;
+      flex-direction: row;
+      justify-content: center;
+        align-items: center
 	</style>
 	
 	<script
@@ -20,31 +56,30 @@
 </head>
 <body>
 	<header>
-		<div class="container fundo " >
+		
 			<div class="clearfix">
-				<div class="col col-6 px2 mx-auto">
-						<a href="index.html"><img src="/images/file.jpeg" style="width: 128px;height: 128px;"></a>
-					</div>
-					<div class="col col-6 px2">
-						<nav>
-							<ul>
-								<li class="max-width"> <a href=""> Home </a></li>
-								<li> Equipe</li>
-								<li> Pescaria</li>
-								<li> Loja</li>
-								<li> Torneios</li>
-							</ul>
-						</nav>
-					</div>
+			
+						<div class="navbar container">
+ 						 <div class="col col-1 ">
+ 						 <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+ 						 </div>
+ 						 <div class="col col-1">
+ 						 <a href="#"><i class=""></i> Equipe</a> 
+ 						 </div>
+ 						 <div class=" col col-1">
+ 						 <a href="#"><i class=""></i> Pescaria</a>
+ 						 </div> 
+ 						 <div class=" col col-1">
+ 						 <a href="#"><i class=""></i> Loja</a>
+ 						 </div>
+ 						 <div class="col col-1">
+ 						 <a href="#"><i class=""></i> Torneios</a>
+ 						 </div>
+							</div>
 				</div>
 
-
-			</div>
-
-
-
-		</div>
 	</header>
+	
 
 </body>
 </html>
