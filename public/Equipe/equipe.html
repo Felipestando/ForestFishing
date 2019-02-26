@@ -93,6 +93,54 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	color: #000000;
 }
 
+.submenu {
+	background-color: #A4A4A4;
+}
+
+body {
+    padding: 40px;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
 	</style>
 
 
@@ -104,21 +152,21 @@ body {font-family: Arial, Helvetica, sans-serif;}
 		
 			<div class="clearfix">
 			
-						<div class="navbar container">
- 						 <div class="col col-1 ">
+						<div class="navbar container ">
+ 						 <div class="  ">
  						 <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
  						 </div>
- 						 <div class="col col-1">
- 						 <a href="equipe.html"><i class=""></i> Equipe</a> 
+ 						 <div class=" ">
+ 						 <a class="submenu" href="/Equipe/equipe.html"><i class=""></i> Equipe</a> 
  						 </div>
- 						 <div class=" col col-1">
- 						 <a href="/Pescaria/pescaria.html"><i class=""></i> Pescaria</a>
+ 						 <div class=" ">
+ 						 <a class="submenu" href="/Pescaria/pescaria.html"><i class=""></i> Pescaria</a>
  						 </div> 
- 						 <div class=" col col-1">
- 						 <a href="/Loja/loja.html"><i class=""></i> Loja</a>
+ 						 <div class="">
+ 						 <a class="submenu" href="/Loja/loja.html"><i class=""></i> Loja </a>
  						 </div>
- 						 <div class="col col-1">
- 						 <a href="/Torneios/torneios.html"><i class=""></i> Torneios</a>
+ 						 <div class=" ">
+ 						 <a class="submenu" href="/Torneios/torneios.html"><i class=""></i> Torneios</a>
  						 </div>
 							</div>
 				</div>
@@ -130,27 +178,27 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	</header>
 	<br>
 
-<h1 class="center font-titulo"> <b> Equipe Forest Fishing </b> </h1>
+<h1 class="center font-titulo animated animatedFadeInUp fadeInUp"> <b> Equipe Forest Fishing </b> </h1>
 <br>
 <div class="clearfix">
 
-<div class="col col-2">
-<iframe src="https://www.cptec.inpe.br/widget/widget.php?p=244&w=h&c=767676&f=ffffff"> Previsão do tempo </iframe>
+<div class="col col-1">
+
 
  </div>
 
-<div class="col col-8 center">
+<div class="col col-10 center">
 
 <div class="cinzinha robo bloco-height bloco-vermelho text-white border">
 <p class="fonte-preta"> Uma dupla de amigos sempre se reunia para pescar, um dia resolveram montar uma equipe de pesca a fim de que tudo ficasse mais organizado e profissional. A partir daí, todas as aventuras de pesca passaram a ser registradas, surgindo então a Equipe Forest Fishing Pesca Esportiva.</p>
 
-<p class="fonte-preta">Nossa equipe montada recentemente já teve algumas formações. Muitos chegaram e muitos outros se foram por motivos diversos, até encontrarmos aqueles que seriam mais que apenas amigos de pescaria, encontramos nossa segunda família!</p>
+<p class="fonte-preta">Nossa equipe montada recentemente já teve algumas Aventuras. Alguns chegaram mas se foram por motivos diversos, estamos em busca de encontrarmos aquelas pessoas de são amantes da pesca como nós e não tem uma companhia para ir na pescaria, queremos formar nossa segunda família!</p>
 
-<p class="fonte-preta">Agradecemos a todos que, juntos, ajudaram de alguma forma a construir o que somos hoje! </p> 
+<p class="fonte-preta">O proposito é que a equipe cresca e se torne grande, ajudaram de alguma forma a construir o que somos hoje! </p> 
 
 <img src="images/dupla.jpg" width="400px;" height="600px;" class="container" >
 
-<div class="col col-2"> </div>
+<div class="col col-1"> </div>
 
 
 	</div>
