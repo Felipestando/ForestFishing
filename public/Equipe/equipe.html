@@ -4,12 +4,14 @@
 	<title>Equipe Forest Fishing</title>
 
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	
 	<script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -141,6 +143,36 @@ body {
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
 }
+.instagram {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 25px;
+  line-height: 40px;
+  vertical-align: middle;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+  font-size: 30px;
+  font-family: Comic Sans MS, Comic Sans, cursive; 
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
 	</style>
 
 
@@ -150,7 +182,7 @@ body {
 <body class="verdinho">
 	<header>
 		
-			<div class="clearfix">
+			<div class="clearfix fixed-top">
 			
 						<div class="navbar container ">
  						 <div class="  ">
@@ -168,8 +200,14 @@ body {
  						 <div class=" ">
  						 <a class="submenu" href="/Torneios/torneios.html"><i class=""></i> Torneios</a>
  						 </div>
+              <div class="w3-display-bottomright w3-container">
+              <span class="instagram">
+                    <span class="fa fa-instagram"></span>
+                      </span> <span class="white"> @equipeforestfishing </span></div>
 							</div>
 				</div>
+        <br>
+
         <h1 class="center font-titulo animated animatedFadeInUp fadeInUp sm-col-12 md-col-11 lg-col-11"> <b> Equipe Forest Fishing </b> </h1>
 				<div class="col col-1"> </div>
 				<div class="center body col col-10">
@@ -181,14 +219,15 @@ body {
 
 
 <br>
-<div class="clearfix">
+<div class="clearfix container-fluid">
 
 <div class="col col-1">
 
 
  </div>
 
-<div class="col col-10 center">
+
+<div class="col col-10 ">
 
 <div class="cinzinha robo bloco-height bloco-vermelho text-white border">
 <p class="fonte-preta"> Uma dupla de amigos sempre se reunia para pescar, um dia resolveram montar uma equipe de pesca a fim de que tudo ficasse mais organizado e profissional. A partir daí, todas as aventuras de pesca passaram a ser registradas, surgindo então a Equipe Forest Fishing Pesca Esportiva.</p>
@@ -199,15 +238,32 @@ body {
 
 <img src="images/dupla.jpg" width="500px;" height="600px;" class="content-center" >
 
+</div>
+
+</div>
+
 <div class="col col-1"> </div>
 
-
-	</div>
-
-
-		</div>
-
-			</div>
-
+	
+</div>
+		
+    <nav class="navbar navbar-secondary mt4">
+      <div class="col-8">
+      <p class="font-robotomono-3 black">Contact (11)98598-1468</p>
+      <p class="font-robotomono-3 black">Forest Fishing</p>
+    </div>
+      <div class="col">
+      <a class="navbar-brand" href="https://www.facebook.com/felipoo.torres" target="_blank">
+        <img src="http://www.iconarchive.com/download/i97515/sicons/basic-round-social/facebook.ico" width="50" height="50">
+      </a>
+      <a class="navbar-brand" href="https://www.instagram.com/equipeforestfishing/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/480px-Instagram_icon.png" width="50" height="50">
+      </a>
+      <a class="navbar-brand" href="https://www.youtube.com/watch?v=eXRfIUde5II" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdasmsicRMtB_4V436anZcL9IezeYolzemO1y7PxqaeBEZIZhELA" width="50" height="50">
+      </a>
+    </div>
+    </nav>
+</div>
 </body>
 </html>

@@ -4,12 +4,14 @@
 	<title>Torneios Forest Fishing</title>
 
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	
 	<script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -227,7 +229,9 @@ img {
 }
 
 .black {
-	background: #000000;
+  color: black;
+  font-size: 15px;
+  font-family: Comic Sans MS, Comic Sans, cursive; 
 }
 
 .verdinho {
@@ -241,17 +245,43 @@ img {
 .submenu {
 	background-color: #A4A4A4;
 }
+
+.instagram {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 25px;
+  line-height: 40px;
+  vertical-align: middle;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.white {
+  color: white;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
 	</style>
 
 
 
 </head>
 <body class="fundao">
+
 	<header>
 		
-			<div class="clearfix">
+			<div class="clearfix fixed-top">
 			
-						<div class="navbar container ">
+						<div class="navbar container fixed-top ">
  						 <div class="  ">
  						 <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
  						 </div>
@@ -267,45 +297,46 @@ img {
  						 <div class=" ">
  						 <a class="submenu" href="/Torneios/torneios.html"><i class=""></i> Torneios</a>
  						 </div>
+              <div class="w3-display-bottomright w3-container">
+              <span class="instagram">
+                    <span class="fa fa-instagram"></span>
+                      </span> <span class="white"> @equipeforestfishing </span></div>
 							</div>
 				</div>
+
 <h1 class="center font-titulo animated animatedFadeInUp fadeInUp"><b>Torneios </b> </h1>
 
 	</header>
-
+<body>
 	<h2 style="text-align:center" >Pesqueiro Fuji</h2>
 
 	<div class="content-center center">
 		
   <div class="mySlides">
-    <div class="numbertext">1 / 5</div>
+   
     <img src="./images/IMG_6646.JPG" style="width:550px; height:550px;">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">2 / 5</div>
+    
     <img src="./images/IMG_6657.JPG" style="width:550px; height:550px;">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">3 / 5</div>
+    
     <img src="./images/IMG_6659.JPG" style="width:550px; height:550px;">
   </div>
     
   <div class="mySlides">
-    <div class="numbertext">4 / 5</div>
+    
     <img src="./images/IMG_6647.JPG" style="width:550px; height:550px;">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">5 / 5</div>
+   
     <img src="./images/PHOTO-12.jpg" style="width:550px; height:550px;">
   </div>
     
-   <div class="center col col-6">
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-  </div> 
 
   <div class="caption-container">
     <p id="caption"></p>
@@ -329,7 +360,7 @@ img {
     </div>  
 </div>
 
-<div class="clearfix">
+<div class="clearfix contanier-fluid">
 <div class="col col-2"> </div>
 
 <div class="col col-8 center">
@@ -373,8 +404,26 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
+</body>
+<footer>
 
-
-
+<nav class="navbar navbar-secondary mt4">
+      <div class="col-8">
+      <p class="font-robotomono-3 black">Contact (11)98598-1468</p>
+      <p class="font-robotomono-3 black">Forest Fishing</p>
+    </div>
+      <div class="col">
+      <a class="navbar-brand" href="https://www.facebook.com/felipoo.torres" target="_blank">
+        <img src="http://www.iconarchive.com/download/i97515/sicons/basic-round-social/facebook.ico" width="50" height="50">
+      </a>
+      <a class="navbar-brand" href="https://www.instagram.com/equipeforestfishing/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/480px-Instagram_icon.png" width="50" height="50">
+      </a>
+      <a class="navbar-brand" href="https://www.youtube.com/watch?v=eXRfIUde5II" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdasmsicRMtB_4V436anZcL9IezeYolzemO1y7PxqaeBEZIZhELA" width="50" height="50">
+      </a>
+  </div>
+    </nav>
+</footer>
 </body>
 </html>
